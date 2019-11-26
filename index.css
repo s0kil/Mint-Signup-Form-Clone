@@ -1,6 +1,55 @@
 body {
   background-color: #eceef1;
 }
+.sign-in-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10px;
+    right: 10px ;
+    height: 34px;
+}
+.sign-in-container .sign-in-action{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+}
+.sign-in-action p {
+    color: rgb(80,80,80);
+    font-size: 12px;
+    margin:0;
+}
+.sign-in-action a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.sign-in-container button{
+    border: solid rgb(76,76,76) 1px;
+    background-color: rgb(0,119,197);
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    height: 100%;
+    margin-left:10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.sign-in-container .lock-icon{
+    background: url("https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-06-512.png");
+    background-position: left;
+    background-size:100%;
+    background-repeat: none;
+    height: 24px;
+    width: 24px;
+    filter: invert(100%);
+    margin: auto;
+    padding: 2px;
+}
+.sign-in-container button p{
+    margin: auto;
+}
 .center-column {
   /* min-width: 30%; */
   width: 380px;
@@ -60,6 +109,12 @@ body {
   font-size: 14px;
   max-width: 300px;
   line-break: loose;
+  color:rgb(117,117,117);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: sans-serif;
 }
 
 .subtitle {
@@ -141,9 +196,22 @@ button[type="submit"] {
   /* width: 100%; */
   /* width: 380px; */
   background: #eceef1;
+
 }
 
 .form-footer p {
   text-align: center;
   font-size: 10px;
+  color: rgb(80, 80, 80);
+}
+.forms-container p{
+
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: rgb(80, 80, 80);
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
 }
