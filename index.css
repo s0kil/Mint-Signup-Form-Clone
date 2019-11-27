@@ -1,66 +1,233 @@
-body{
-    background-color: #ECEEF1;
+body {
+  background-color: #eceef1;
 }
-.center-column{
-    width: 30%;
 
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.sign-in-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 34px;
 }
-.center-column .logo-type{
-    text-align: center;
-    background-image: url('https://www.intuit.com/content/dam/intuit/intuitcom/company/images/logo-intuit-preferred.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 40px;
-    filter: grayscale();
-    padding: 20px 0 ;
-}
-.center-column .icons{
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.center-column .icons div{
-    display: flex;
-    flex-direction: row;
-}
-.center-column .icons img{
-    width: 23px;
-    margin-right: 4px;
-}
-.center-column .icons p {
 
+.sign-in-container .sign-in-action {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: auto;
 }
-.center-column .forms-container{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border : solid #c7c7c7 1px;
-    width: 80;
-    padding: 30px;
+
+.sign-in-action p {
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+  margin: 0;
 }
+
+.sign-in-action a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.sign-in-container .button-container {
+  border: solid rgb(76, 76, 76) 1px;
+  background-color: rgb(0, 119, 197);
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-footer p {
+  text-align: center;
+  font-size: 10px;
+  color: rgb(80, 80, 80);
+}
+
+.sign-in-container p {
+  margin: auto;
+  margin-right: 10px;
+}
+
+.sign-in-container .lock-icon {
+  background: url("https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-06-512.png");
+  background-position: left;
+  background-size: 100%;
+  background-repeat: none;
+  height: 24px;
+  width: 24px;
+  filter: invert(100%);
+  margin: auto;
+  padding: 2px;
+}
+
+.sign-in-container button p {
+  margin: auto;
+}
+
+.center-column {
+  width: 380px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-column .logo-type {
+  text-align: center;
+  background-image: url("https://www.intuit.com/content/dam/intuit/intuitcom/company/images/logo-intuit-preferred.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 40px;
+  filter: grayscale();
+  padding: 20px 0;
+}
+
+.center-column .icons {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.center-column .icons div {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-column .icons img {
+  width: 23px;
+  margin-right: 4px;
+}
+
+.center-column .forms-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid #c7c7c7 1px;
+  width: 80;
+}
+
+#form-body {
+  padding: 30px;
+}
+
 .forms-container h2 {
-    text-align: center;
-    font-size: 24px;
-    font-family: "Helvetica Neue";
-	font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
-.subtitle{
-    text-align:center;
+
+#form-body > p {
+  text-align: center;
+  max-width: 300px;
+  line-break: loose;
+  color: rgb(117, 117, 117);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  font-weight: 400;
 }
+
+.subtitle {
+  text-align: center;
+}
+
 .forms-container a {
-    text-align: center;
-    font-size: 12px;
-    margin: 0;
-    text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
+  text-decoration: none;
+  display: block;
 }
-.forms-container input{
-    width: 100%;
+
+input {
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.forms-container input {
+  width: 100%;
+}
+
+label {
+  font-family: "Helvetica Neue", sans-serif;
+  display: block;
+  margin: 10px 0;
+}
+
+.phone-number span {
+  font-size: 12px;
+}
+
+.phone-number input {
+  margin: 10px 0;
+}
+
+.password-form,
+.password-form > input {
+  position: relative;
+}
+
+#password-icon {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/ui-ux-essentials/24/unlocking-512.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button[type="submit"] {
+  color: white;
+  background: rgb(0, 119, 197);
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+  border: 0;
+  position: relative;
+}
+
+#submit-button-wrapper {
+  margin: 30px 0;
+  position: relative;
+}
+
+#submit-button-icon {
+  position: absolute;
+  top: 1px;
+  left: 60px;
+  filter: invert(100%);
+  width: 40px;
+  height: 40px;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-06-512.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-footer {
+  padding: 10px;
+  background: #eceef1;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+  width: 80%;
+  margin: auto;
 }

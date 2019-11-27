@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="sign-in-container">
-            <div class="signing-action">
-                <p>Already have an Intuit account?</p>
-                <a href="#">I forgot my user ID or password.</a>
-            </div>
-            <button type="button">Sign In</button>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Intuit Sign Up</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <aside class="sign-in-container">
+        <div class="sign-in-action">
+            <p>Already have an Intuit account?</p>
+            <a href="#">I forgot my user ID or password.</a>
         </div>
-        <div class="main">
-            <div class="center-column">
-                <div class="logo-type"></div>
-                <div class='icons'>
-                    <div class="mint-icon">
-                        <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/mint-favicon.svg" alt="">
-                        <p>mint</p>
-                    </div>
-                    <div class="quickbooks-icon">
-                        <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/quickbooks-favicon@2x.svg" alt="">
-                        <p>quickbooks</p>
-                    </div>
-                    <div class="turbotax-icon">
-                        <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/tt-favicon@2x.svg" alt="">
-                        <p>turbotax</p>
-                    </div>
+        <div class='button-container' role="button">
+            <span class='lock-icon'></span>
+            <p>Sign In</p>
+        </div>
+    </aside>
+    <main class="main">
+        <section class="center-column">
+            <div class="logo-type"></div>
+            <div class="icons">
+                <div class="mint-icon">
+                    <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/mint-favicon.svg" alt="" />
+                    <p>mint</p>
                 </div>
-                <!--Container for the form in the middle of the page------------>
-                <div class="forms-container">
+                <div class="quickbooks-icon">
+                    <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/quickbooks-favicon@2x.svg" alt="" />
+                    <p>quickbooks</p>
+                </div>
+                <div class="turbotax-icon">
+                    <img src="https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/tt-favicon@2x.svg" alt="" />
+                    <p>turbotax</p>
+                </div>
+            </div>
+            <section class="forms-container">
+                <div id="form-body">
                     <h2>Create an Intuit Account</h2>
-                    <p class='subtitle'>One account for everything Intuit, including Mint.</p>
+                    <p class="subtitle">
+                        One account for everything Intuit, including Mint.
+                    </p>
                     <a href="#">Learn More</a>
                     <form class="sign-up-form" action="index.html" method="post">
-                        <label for="e-mail">
-                            <p>Email Adress</p>
-                            <input type="e-mail" id='e-mail'/>
+                        <label for="email">
+                            Email Adress
                         </label>
-                        <label for="phone-number">
-                            <p>Phone (Recommended)</p>
-                            <input type="phone" id='phone-number'/>
-                            <p>Standard call, messaging or data rates may apply.</p>
+                        <input type="email" id="email" />
+                        <label class='phone-number' for="phone-number">
+                            Phone (Recommended)
+                            <input type="tel" id="phone-number" />
+                            <span>Standard call, messaging or data rates may apply.</span>
                         </label>
                         <label for="password">
-                            <p>Password</p>
-                            <div class="password-form">
-                                <input type="password" id='password'/>
-                                <img src="#" alt="">
-                            </div>
+                            Password
                         </label>
-                        <button type="submit" name="button">Create Account</button>
+                        <div class="password-form">
+                            <input type="password" id="password" />
+                            <span id="password-icon"></span>
+                        </div>
+                        <div id="submit-button-wrapper">
+                            <button type="submit" name="button">
+                                <span id="submit-button-icon"></span>
+                                Create Account
+                            </button>
+                        </div>
                     </form>
                     <p>
-                        By clicking Create account, you agree to our
-                        Terms and have read and acknowledge our Privacy Statement.
+                        By clicking Create account, you agree to our Terms and have read
+                        and acknowledge our Privacy Statement.
                     </p>
-                    <div class="form-footer">
-                        <p>Invisible reCAPTCHA by Google <a href='#'>Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <footer>
-            Legal Privacy Security <br/>
-            © 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax,
-             ProConnect and Mint are registered trademarks of Intuit Inc.
-             Terms and conditions, features, support, pricing, and service options
-             subject to change without notice.
-         </footer>
-    </body>
+                <footer class="form-footer">
+                    <p>
+                        Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
+                        <a href="#">Terms of Use</a>.
+                    </p>
+                </footer>
+            </section>
+        </section>
+    </main>
+    <footer class='page-footer'>
+        Legal Privacy Security <br />
+        © 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax,
+        ProConnect and Mint are registered trademarks of Intuit Inc. Terms and
+        conditions, features, support, pricing, and service options subject to
+        change without notice.
+    </footer>
+</body>
+
 </html>
