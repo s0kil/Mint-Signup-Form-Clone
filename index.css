@@ -24,7 +24,7 @@ body {
     font-size: 12px;
     text-decoration: none;
 }
-.sign-in-container button{
+.sign-in-container .button-container  {
     border: solid rgb(76,76,76) 1px;
     background-color: rgb(0,119,197);
     margin: auto;
@@ -35,6 +35,10 @@ body {
     font-size: 12px;
     display: flex;
     flex-direction: row;
+}
+.sign-in-container p{
+    margin: auto;
+    margin-right: 10px;
 }
 .sign-in-container .lock-icon{
     background: url("https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-06-512.png");
@@ -51,7 +55,6 @@ body {
     margin: auto;
 }
 .center-column {
-  /* min-width: 30%; */
   width: 380px;
 
   margin: auto;
@@ -123,29 +126,31 @@ body {
 .forms-container a {
   text-align: center;
   font-size: 12px;
-  margin: 0;
+  margin: auto;
   text-decoration: none;
+  display: block;
 }
 .forms-container input {
   width: 100%;
 }
-
 input {
   height: 30px;
   border: 1px solid lightgray;
   border-radius: 3px;
 }
 
-label p {
-  margin-bottom: 6px;
+label {
   font-family: "Helvetica Neue";
+  display: block;
+  margin: 10px 0;
 }
 
-#phone-number span {
-  margin-top: 0;
+.phone-number span {
   font-size: 12px;
 }
-
+.phone-number input{
+    margin: 10px 0;
+}
 .password-form,
 .password-form > input {
   position: relative;
@@ -193,8 +198,6 @@ button[type="submit"] {
 
 .form-footer {
   padding: 10px;
-  /* width: 100%; */
-  /* width: 380px; */
   background: #eceef1;
 
 }
@@ -204,10 +207,7 @@ button[type="submit"] {
   font-size: 10px;
   color: rgb(80, 80, 80);
 }
-.forms-container p{
-
-}
-footer{
+.page-footer{
     text-align: center;
     padding: 20px;
     color: rgb(80, 80, 80);
