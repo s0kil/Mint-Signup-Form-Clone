@@ -1,7 +1,5 @@
 # Mint-Signup-Form-Clone
 
-
-
 ## Mint Form Page Clone
 
 ​This is our project for Microverse wich focus in cloning the Intuit Sign up page
@@ -12,9 +10,7 @@
 
 Daniel Sokil : s0kil
 
-## Requirements
-
-*** Although it has input fields, nothing works since we didnt use any javascript in this project
+\*\*\* Although it has input fields, nothing works since we didnt use any javascript in this project
 
     Remember about descriptive README file.
     Inline comments: It’s better to delete commented code. If you need to review a previous version of your code, use git history.

@@ -77,6 +77,12 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 800px) {
+  .center-column {
+    margin-top: 4em;
+  }
+}
+
 .center-column .logo-type {
   text-align: center;
   background-image: url("https://www.intuit.com/content/dam/intuit/intuitcom/company/images/logo-intuit-preferred.png");
